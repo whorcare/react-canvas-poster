@@ -1,7 +1,7 @@
 # react-canvas-poster
 react-canvas-poster是一个基于react+canvas通过简单的数据生成canvas图片的组件
 # 生成效果
-![生成一个简单海报图片](https://3img.evente.cn/89/24/c5/2f8bd4af2030c57438fbdb8735.jpg?imageView2/2/w/740)
+![生成一个简单海报图片](https://1img.evente.cn/6e/64/cc/89c0c54e4f6434c40a493efacd.jpg?imageView2/2/w/740)
 # 安装
 ```
 npm i react-canvas-poster

@@ -2,7 +2,7 @@ import "babel-polyfill";
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class canvasPoster extends Component {
+export class CanvasPoster extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -58,7 +58,6 @@ class canvasPoster extends Component {
       }
     }
     this.props.success(this.refs.canvas.toDataURL('image/jpeg'));
-    // this.$emit('success', this.$refs.canvas.toDataURL('image/jpeg'));
   }
 
   // drawImg
@@ -265,13 +264,13 @@ class canvasPoster extends Component {
   }
 }
 
-canvasPoster.propTypes = {
+CanvasPoster.propTypes = {
   drawData: PropTypes.object,
 };
 
 // 默认值
-canvasPoster.defaultProps = {
+CanvasPoster.defaultProps = {
   drawData: {}
 };
 
-export default canvasPoster;
+export default CanvasPoster;

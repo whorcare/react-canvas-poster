@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import ReactDemo from '../../src'
+import CanvasPoster from '../../src'
 import bold from '../assets/bold.png';
 
 let drawData= {
@@ -29,7 +29,7 @@ let drawData= {
       },
       {
         type: 'text',
-        content: 'vue-canvas-poster-yufan简单快速的绘制canvas海报~~这是一段比较长的标题文字',
+        content: 'react-canvas-poster简单快速的绘制canvas海报~~这是一段比较长的标题文字',
         fontSize: 14,
         color: '#f7f7f7',
         textAlign: 'center',
@@ -90,5 +90,5 @@ function success(res) {
   console.log(res)
 }
 
-const App = () => <ReactDemo drawData={drawData} success={success.bind(this)}/>
+const App = () => <CanvasPoster drawData={drawData} success={success.bind(this)}/>
 render(<App />, document.getElementById('root'))
