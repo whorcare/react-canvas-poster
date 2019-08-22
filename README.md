@@ -185,6 +185,6 @@ success(src) {
 - ...
 
 ### 交流
-#####有什么意见,或者bug 或者想一起开发react-canvas-poster
+####有什么意见,或者bug 或者想一起开发react-canvas-poster
 ![我的微信](https://0img.evente.cn/0f/41/65/8ad030fc5d9f82f6345b3d6e7c.jpg?imageView2/2/w/300)
-#####[提iss](https://github.com/whorcare/react-canvas-poster/issues/new)
+####[提iss](https://github.com/whorcare/react-canvas-poster/issues/new)
