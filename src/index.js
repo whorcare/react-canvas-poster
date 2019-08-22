@@ -19,7 +19,7 @@ export class CanvasPoster extends Component {
   render () {
     return (
       <div className="canvas-poster">
-        <canvas className="canvas-poster-hidca" ref="canvas"></canvas>
+        <canvas className="canvas-poster-hidca" ref="canvas" style={{display: this.state.debug ? 'block' :'none'}}></canvas>
       </div>
     );
   }

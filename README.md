@@ -1,5 +1,6 @@
 # react-canvas-poster
-react-canvas-poster是一个基于react+canvas通过简单的数据生成canvas图片的组件
+一个基于react+canvas通过类CSS数据生成canvas图片的组件
+(･(ง •_•)งﾟ✧ A super easy create canvas poster for React!)
 # 生成效果
 ![生成一个简单海报图片](https://1img.evente.cn/6e/64/cc/89c0c54e4f6434c40a493efacd.jpg?imageView2/2/w/740)
 # 安装
@@ -9,11 +10,14 @@ npm i react-canvas-poster
 # 使用组件
 ##### 注册
 ```
-文档完善中...
+import CanvasPoster from 'react-canvas-poster';
 ```
 ##### 使用
 ```
-文档完善中...
+<CanvasPoster drawData={this.state.drawData} success={this.success.bind(this)}/>
+
+// return base64类型图片文件
+success(res) {}
 ```
 
 <details><summary>demo数据例子（点击展开）</summary><br>
@@ -24,7 +28,6 @@ npm i react-canvas-poster
         width: 360,
         height: 667,
         backgroundColor: '#fff',
-        debug: true,
         views: [
           // 绘制本地图片
           {
@@ -154,4 +157,34 @@ borderColor| 边框颜色 | |  否|
 borderRadius| 圆角 | 0| 否 |
 opacity| 透明度 | 1|  否|
 
+### 方法
+```
+success(src) {
+  // 返回base64图片
+  console.log(src)
+}
+```
 
+### 注意
+##### 关于canvas图片跨域
+图片跨域暂时未完全解决，远程图片地址推荐使用同域名，不然会报错
+
+### 相关参考
+[vue-canvas-poster](https://github.com/whorcare/vue-canvas-poster-yufan) 作者：也是俺自己
+[canvas图片跨域怎么办](https://www.jianshu.com/p/454b288d4aa5)
+[wxa-plugin-canvas](#) 作者：jasondu
+[绘制圆角矩形](https://blog.csdn.net/liuyan19891230/article/details/51259147) 作者：YvetteLau
+[贝塞尔曲线](https://github.com/hujiulong/blog/issues/1) 作者：hujiulong
+
+
+### 持续开发中的功能...
+box-shadow 绘制阴影
+QrCode 绘制二维码
+Bezier curve 贝塞尔曲线
+可选类型图片导出
+...
+
+### 交流
+有什么意见,或者bug 或者想一起开发react-canvas-poster
+![我的微信](https://0img.evente.cn/0f/41/65/8ad030fc5d9f82f6345b3d6e7c.jpg?imageView2/2/w/740)
+[提iss](https://github.com/whorcare/react-canvas-poster/issues/new)

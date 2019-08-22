@@ -1,9 +1,9 @@
 {
   "name": "react-canvas-poster",
-  "version": "1.0.11",
-  "description": "react-canvas-poster是一个基于react+canvas通过简单的数据生成canvas图片的组件(･(ง •_•)งﾟ✧ A super easy create canvas poster for React!)",
+  "version": "1.0.2",
+  "description": "基于react+canvas通过简单类CSS数据生成canvas图片的组件(･(ง •_•)งﾟ✧ A super easy create canvas poster for React!)",
   "repository": "https://github.com/whorcare/react-canvas-poster",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
