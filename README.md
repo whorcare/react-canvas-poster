@@ -170,21 +170,21 @@ success(src) {
 图片跨域暂时未完全解决，远程图片地址推荐使用同域名，不然会报错
 
 ### 相关参考
-[vue-canvas-poster](https://github.com/whorcare/vue-canvas-poster-yufan) 作者：也是俺自己
-[canvas图片跨域怎么办](https://www.jianshu.com/p/454b288d4aa5)
-[wxa-plugin-canvas](#) 作者：jasondu
-[绘制圆角矩形](https://blog.csdn.net/liuyan19891230/article/details/51259147) 作者：YvetteLau
-[贝塞尔曲线](https://github.com/hujiulong/blog/issues/1) 作者：hujiulong
+1. [vue-canvas-poster](https://github.com/whorcare/vue-canvas-poster-yufan) 作者：也是俺自己
+2. [canvas图片跨域怎么办](https://www.jianshu.com/p/454b288d4aa5)
+3. [wxa-plugin-canvas](#) 作者：jasondu
+4. [绘制圆角矩形](https://blog.csdn.net/liuyan19891230/article/details/51259147) 作者：YvetteLau
+5. [贝塞尔曲线](https://github.com/hujiulong/blog/issues/1) 作者：hujiulong
 
 
 ### 持续开发中的功能...
-box-shadow 绘制阴影
-QrCode 绘制二维码
-Bezier curve 贝塞尔曲线
-可选类型图片导出
-...
+- box-shadow 绘制阴影
+- QrCode 绘制二维码
+- Bezier curve 贝塞尔曲线
+- 可选类型图片导出
+- ...
 
 ### 交流
-有什么意见,或者bug 或者想一起开发react-canvas-poster
-![我的微信](https://0img.evente.cn/0f/41/65/8ad030fc5d9f82f6345b3d6e7c.jpg?imageView2/2/w/740)
-[提iss](https://github.com/whorcare/react-canvas-poster/issues/new)
+#####有什么意见,或者bug 或者想一起开发react-canvas-poster
+![我的微信](https://0img.evente.cn/0f/41/65/8ad030fc5d9f82f6345b3d6e7c.jpg?imageView2/2/w/300)
+#####[提iss](https://github.com/whorcare/react-canvas-poster/issues/new)
