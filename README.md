@@ -86,6 +86,15 @@ success(res) {}
             paddingRight: 10,
             backgroundColor: '#fff',
           },
+          // 二维码
+          {
+            type: 'qcode',
+            text: 'https://github.com/whorcare/vue-canvas-poster-yufan',
+            top: 420,
+            left: 135,
+            width: 90,
+            height: 90,
+          },
       }
 ```
 
@@ -157,6 +166,18 @@ borderColor| 边框颜色 | |  否|
 borderRadius| 圆角 | 0| 否 |
 opacity| 透明度 | 1|  否|
 
+### qcode 字段（绘制图片）
+属性 | 含义 |  默认值 | 是否必填
+---|---|---|---
+text| 二维码内容（链接 或者 文字）  |" " | 是|
+top| 二维码距离顶部距离 | 0|  是|
+left| 二维码距离左边距离| 0|   是|
+width| 二维码宽度 | 200 |   是|
+height| 二维码高度 | 200 |    是|
+background| 背景色 | #fff |    否|
+foreground| 区块色 | #000 |    否|
+padding| 内边距 (0为无内边距） | 5 |   否 |
+
 ### 方法
 ```
 success(src) {
@@ -179,12 +200,11 @@ success(src) {
 
 ### 持续开发中的功能...
 - box-shadow 绘制阴影
-- QrCode 绘制二维码
 - Bezier curve 贝塞尔曲线
 - 可选类型图片导出
 - ...
 
 ### 交流
-####有什么意见,或者bug 或者想一起开发react-canvas-poster
+#### 有什么意见,或者bug 或者想一起开发react-canvas-poster
 ![我的微信](https://0img.evente.cn/0f/41/65/8ad030fc5d9f82f6345b3d6e7c.jpg?imageView2/2/w/300)
-####[提iss](https://github.com/whorcare/react-canvas-poster/issues/new)
+#### [提iss](https://github.com/whorcare/react-canvas-poster/issues/new)

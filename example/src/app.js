@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 import { render } from 'react-dom'
 import CanvasPoster from '../../src'
 import bold from '../assets/bold.png';
@@ -65,8 +65,8 @@ let drawData= {
         borderColor: '#f0efefea',
       },
       {
-        type: 'image',
-        url: require('../assets/code.png'), //  eslint-disable-line
+        type: 'qcode',
+        text: 'https://github.com/whorcare/vue-canvas-poster-yufan', //  eslint-disable-line
         top: 420,
         left: 135,
         width: 90,
@@ -86,9 +86,28 @@ let drawData= {
 
 }
 
-function success(res) {
-  console.log(res)
+export class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      img: '',
+    };
+  }
+
+  render () {
+    return (
+      <div>
+        <img src={this.state.img} />
+        <CanvasPoster drawData={drawData} success={this.success.bind(this)}/>
+      </div>
+    );
+  }
+
+  success(res) {
+    this.setState({
+      img: res
+    });
+  }
 }
 
-const App = () => <CanvasPoster drawData={drawData} success={success.bind(this)}/>
 render(<App />, document.getElementById('root'))
