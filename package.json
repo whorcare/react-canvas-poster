@@ -1,6 +1,6 @@
 {
   "name": "react-canvas-poster",
-  "version": "1.0.21",
+  "version": "1.1.0",
   "description": "基于react+canvas通过简单类CSS数据生成canvas图片的组件(･(ง •_•)งﾟ✧ A super easy create canvas poster for React!)",
   "repository": "https://github.com/whorcare/react-canvas-poster",
   "main": "lib/index.js",
